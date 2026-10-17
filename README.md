@@ -5,6 +5,7 @@ A structured literature guide to **online vectorized HD mapping**, **lane topolo
 ## Navigation
 
 - [Research genealogy](ROADMAP.md): conceptual lineage, research questions, and Mermaid diagrams
+- [Detailed related-work study guide](ONLINE_MAPPING_RELATED_WORK.md): repaired Mermaid diagrams and paper-by-paper technical analysis
 - [Annotated paper index](PAPERS.md): chronological and topical catalog
 - [Research methodology](METHODOLOGY.md): evidence, comparisons, limitations
 - [Representation concepts](concepts/representation-and-topology.md): raster, vectors, graphs, topology
