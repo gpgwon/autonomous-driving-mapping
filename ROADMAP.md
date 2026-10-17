@@ -1,27 +1,29 @@
 # Research Genealogy: Online Mapping for Autonomous Driving
 
+For an expanded, diagram-checked, English-language narrative, see [Online Mapping Related Work](ONLINE_MAPPING_RELATED_WORK.md).
+
 This roadmap describes **problem-driven relationships**, not a strict citation tree.
 
 ## The central evolution
 
 ```mermaid
 flowchart TD
-  H["HDMapNet (2021)\nRaster predictions + postprocessing"] --> V["VectorMapNet (2022)\nAutoregressive vector generation"]
-  V --> M["MapTR (2022)\nStructured point-set matching"]
-  M --> MV["MapTRv2 (2023)\nMore efficient vector learning"]
-  M --> T["TopoNet (2023)\nLane-to-lane / lane-to-traffic topology"]
-  T --> S["SMERF (2023)\nSD map cross-attention for topology"]
-  S --> P["P-MapNet (2024)\nSD + learned HD map priors"]
-  S --> TS["TopoSD (2024)\nTopology-aware lane segments + SD maps"]
-  S --> SD["SDHDMap (2024)\nRaster / graph SD map priors"]
-  S --> SM["SMART (2025)\nPretrained SD/satellite map priors"]
-  S --> SC["SCORE (2025)\nSD-informed query init + temporal fusion"]
-  SM --> PD["PriorDrive (2026)\nUnified vector prior representations"]
-  T --> LN["LaneSegNet / TopoLogic (2024)\nLane segment and geometric topology"]
-  M --> ST["StreamMapNet (2023)\nTemporal map fusion"]
-  ST --> MT["MapTracker (2024)\nConsistent map-element tracking"]
-  MT --> GM["GlobalMapNet (2024)\nIncremental global construction"]
-  PD -. "adjacent map association objective" .-> ONR["ONR / MAT (2026)\nRoad-level to lane-level matching"]
+  H["HDMapNet (2021)<br/>Raster predictions + postprocessing"] --> V["VectorMapNet (2022)<br/>Autoregressive vector generation"]
+  V --> M["MapTR (2022)<br/>Structured point-set matching"]
+  M --> MV["MapTRv2 (2023)<br/>More efficient vector learning"]
+  M --> T["TopoNet (2023)<br/>Lane-to-lane / lane-to-traffic topology"]
+  T --> S["SMERF (2023)<br/>SD map cross-attention for topology"]
+  S --> P["P-MapNet (2024)<br/>SD + learned HD map priors"]
+  S --> TS["TopoSD (2024)<br/>Topology-aware lane segments + SD maps"]
+  S --> SD["SDHDMap (2024)<br/>Raster / graph SD map priors"]
+  S --> SM["SMART (2025)<br/>Pretrained SD/satellite map priors"]
+  S --> SC["SCORE (2025)<br/>SD-informed query init + temporal fusion"]
+  SM --> PD["PriorDrive (2026)<br/>Unified vector prior representations"]
+  T --> LN["LaneSegNet / TopoLogic (2024)<br/>Lane segment and geometric topology"]
+  M --> ST["StreamMapNet (2023)<br/>Temporal map fusion"]
+  ST --> MT["MapTracker (2024)<br/>Consistent map-element tracking"]
+  MT --> GM["GlobalMapNet (2024)<br/>Incremental global construction"]
+  PD -. "adjacent map association objective" .-> ONR["ONR / MAT (2026)<br/>Road-level to lane-level matching"]
 ```
 
 ## Five research questions
