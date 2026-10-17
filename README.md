@@ -1,6 +1,6 @@
 # Autonomous Driving Mapping — Research Knowledge Base
 
-A structured, English-language literature guide to **online vectorized HD mapping**, **lane topology reasoning**, **map-prior-guided mapping**, and **temporal/global map construction**.
+A structured literature guide to **online vectorized HD mapping**, **lane topology reasoning**, **map-prior-guided mapping**, and **temporal/global map construction**.
 
 ## Navigation
 
